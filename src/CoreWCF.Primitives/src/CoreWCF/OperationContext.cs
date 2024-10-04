@@ -69,8 +69,7 @@ namespace CoreWCF
             OutgoingMessageVersion = channel.MessageVersion;
         }
 
-        // TODO: Probably want to revert this to public
-        internal IContextChannel Channel
+        public IContextChannel Channel
         {
             get { return GetCallbackChannel<IContextChannel>(); }
         }
